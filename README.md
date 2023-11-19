@@ -12,3 +12,8 @@ find /path/to/directory -type f -exec sed -i 's/old.email@example.com/new.email@
 -f flag files only
 s//g sub global
 -i flag nplace editing
+
+#adding counter for animation
+
+counter=1; for file in $(ls *.png); do mv "$file" "progress-$((counter++)).png"; done
+
