@@ -13,7 +13,7 @@ find /path/to/directory -type f -exec sed -i 's/old.email@example.com/new.email@
 s//g sub global
 -i flag nplace editing
 
-#adding counter for animation
+## Ddding counter for animation (Progress-1...n)
 
 counter=1; for file in $(ls *.png); do mv "$file" "progress-$((counter++)).png"; done
 
